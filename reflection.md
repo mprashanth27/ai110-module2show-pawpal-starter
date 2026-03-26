@@ -1,6 +1,8 @@
 # PawPal+ Project Reflection
 
 ## 1. System Design
+A smart pet care management system app to track daily routines of pets such as feedings, walks, medications, and appointments.
+use scheduling and prioritization algorithms to organize and prioritize tasks.
 
 **a. Initial design**
 
