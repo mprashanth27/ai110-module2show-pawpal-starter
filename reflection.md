@@ -9,6 +9,13 @@ use scheduling and prioritization algorithms to organize and prioritize tasks.
 - Briefly describe your initial UML design.
 - What classes did you include, and what responsibilities did you assign to each?
 
+| Main objects needed for the system | Attributes                                   | Methods                      |
+|-----------------------------------|-----------------------------------------------|------------------------------|
+| owner(s)                          | Name<br>Address<br>Contact<br>Pet             | do_task                      |
+| Pet(s)                            | Name<br>Breed                                  |                              |
+| Task(s)                           | Name<br>Location<br>Time<br>Status<br>Description | Create<br>Edit<br>Delete<br>Reschedule |
+| Scheduler                         | Schedule/Appointments                          | Book appointment             |
+
 **b. Design changes**
 
 - Did your design change during implementation?
