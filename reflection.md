@@ -21,6 +21,15 @@ use scheduling and prioritization algorithms to organize and prioritize tasks.
 - Did your design change during implementation?
 - If yes, describe at least one change and why you made it.
 
+Yes, I have made below changes suggested by Claude code after verifying them.
+
+| Main Object | Attributes | Methods |
+|-------------|------------|---------|
+| **Owner** | - String name<br>- String address<br>- String contact<br>- List\<Pet> pets | - do_task(task: Task) : void<br>- add_pet(pet: Pet) : void |
+| **Pet** | - String name<br>- String breed<br>- List\<Task> tasks | *(none shown)* |
+| **Task** | - String name<br>- String location<br>- DateTime time<br>- String status<br>- String description<br>- int priority | - create() : Task<br>- edit(field: String, value: String) : void<br>- delete() : void<br>- reschedule(new_time: DateTime) : void |
+| **Scheduler** | - List\<Task> schedule<br>- List\<Task> appointments | - book_appointment(task: Task) : void<br>- prioritize_tasks() : List\<Task><br>- get_upcoming(hours: int) : List\<Task><br>- cancel_appointment(task: Task) : void |
+
 ---
 
 ## 2. Scheduling Logic and Tradeoffs
